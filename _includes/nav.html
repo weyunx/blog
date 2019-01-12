@@ -13,7 +13,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.miniTitle }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,6 +22,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="{{ site.baseurl }}/">Home</a>
+                    </li>
+                     <li>
+                        <a href="https://weyunx.com/notes">Notes</a>
                     </li>
                     {% for page in site.pages %}
                     {% if page.title and page.hide-in-nav != true %}
