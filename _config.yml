@@ -72,8 +72,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-# ga_track_id: 'UA-131908662-1'            # Format: UA-xxxxxx-xx
-# ga_domain: weyunx.com
+ga_track_id: 'UA-131908662-1'            # Format: UA-xxxxxx-xx
+ga_domain: weyunx.com
 
 
 
