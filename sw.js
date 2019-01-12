@@ -213,6 +213,7 @@ self.addEventListener('fetch', event => {
       // you need "preserve logs" to see this log
       // cuz it happened before navigating
       console.log(`fetch ${event.request.url}`)
+      debugger
       event.waitUntil(revalidateContent(cached, fetchedCopy))
     }
   }
