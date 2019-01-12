@@ -12,27 +12,26 @@
 const CACHE_NAMESPACE = 'main-'
 
 const CACHE = CACHE_NAMESPACE + 'precache-then-runtime';
-const baseurl= "blog"
+
 const PRECACHE_LIST = [
-  baseurl + "/",
-  baseurl + "/offline.html",
-  baseurl + "/js/jquery.min.js",
-  baseurl + "/js/bootstrap.min.js",
-  baseurl + "/js/hux-blog.min.js",
-  baseurl + "/js/snackbar.js",
-  baseurl + "/img/icon_wechat.png",
-  baseurl + "/img/avatar-hux.jpg",
-  baseurl + "/img/home-bg.jpg",
-  baseurl + "/img/404-bg.jpg",
-  baseurl + "/css/hux-blog.min.css",
-  baseurl + "/css/bootstrap.min.css"
+  "./",
+  "./offline.html",
+  "./js/jquery.min.js",
+  "./js/bootstrap.min.js",
+  "./js/hux-blog.min.js",
+  "./js/snackbar.js",
+  "./img/icon_wechat.png",
+  "./img/avatar-hux.jpg",
+  "./img/home-bg.jpg",
+  "./img/404-bg.jpg",
+  "./css/hux-blog.min.css",
+  "./css/bootstrap.min.css"
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3",
   // "//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "weyunx.com/blog",
   "weyunx.com",
   "cdnjs.cloudflare.com"
 ]
