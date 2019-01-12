@@ -7,7 +7,7 @@ email: jiangnan0802@gmail.com
 description: "关于程序与设计，Web ，Software Engineer"
 keyword: "个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "https://weyunx.com"              # your host, for absolute URL
-baseurl: "/blog"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true

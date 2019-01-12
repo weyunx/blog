@@ -212,8 +212,9 @@ self.addEventListener('fetch', event => {
     if (isNavigationReq(event.request)) {
       // you need "preserve logs" to see this log
       // cuz it happened before navigating
+
       console.log(`fetch ${event.request.url}`)
-      debugger
+      
       event.waitUntil(revalidateContent(cached, fetchedCopy))
     }
   }
