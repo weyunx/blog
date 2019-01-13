@@ -1,10 +1,10 @@
 # Site settings
-title: 微云的技术博客
+title: WeYunx's Blog
 miniTitle: WeYunx
 SEOTitle: 微云·WeYunx
 header-img: img/home-bg.jpg
 email: jiangnan0802@gmail.com
-description: "关于程序与设计，Web ，Software Engineer"
+description: "关于程序与设计，Web ，Software Engineer, 生活"
 keyword: "个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "https://weyunx.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
