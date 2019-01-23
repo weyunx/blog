@@ -6,7 +6,8 @@ author:     WeYunx
 header-style: text
 catalog: true
 tags:
-    - GitLab,GitLab Runner
+    - GitLab
+    - GitLab Runner
 
 ---
 
