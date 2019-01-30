@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      GitLab 简易指引（二）
-subtitle:   GitLab Runner 安装与配置
+title:      GitLab 简易指引（二）：GitLab Runner 安装与配置
+subtitle:   
 author:     WeYunx
 header-style: text
 catalog: true
