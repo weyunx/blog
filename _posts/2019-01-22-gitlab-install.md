@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      GitLab 简易指引（一）
-subtitle:   离线一键安装
+title:      GitLab 简易指引（一）：离线一键安装
+subtitle:   
 author:     WeYunx
 header-style: text
 catalog: true
