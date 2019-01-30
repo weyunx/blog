@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      GitLab 简易指引（二）
+title:      GitLab 简易指引（三）
 subtitle:   备份与恢复
 author:     WeYunx
 header-style: text

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      GitLab 简易指引（三）
+title:      GitLab 简易指引（二）
 subtitle:   GitLab Runner 安装与配置
 author:     WeYunx
 header-style: text
