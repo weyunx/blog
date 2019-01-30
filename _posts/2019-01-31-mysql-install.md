@@ -15,7 +15,7 @@ tags:
 在 Centos7 系统下使用`yum`命令安装 MySql ，首先先在官网[这里](https://dev.mysql.com/downloads/repo/yum/)查看资源包。
 
 ```bash
-# 可根据实际情况替换下面链接中 mysql80-community-release-el7-2.noarch.rpm 为最新版本
+# 根据实际情况替换 mysql80-community-release-el7-2.noarch.rpm 为最新版本
 wget http://repo.mysql.com/mysql80-community-release-el7-2.noarch.rpm
 
 # 安装

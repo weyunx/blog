@@ -8,6 +8,7 @@ catalog: true
 tags:
     - GitLab
     - GitLab Runner
+    - Linux
 
 ---
 
@@ -106,7 +107,6 @@ Runner 默认只会在配置了和自身 tags 一致的项目上运行，是为�
 ## GitLab 中配置 Runner
 
 在 GitLab 项目中新增`.gitlab-ci.yml` ，可以选择预先设置好的模版。
-
 
 
 

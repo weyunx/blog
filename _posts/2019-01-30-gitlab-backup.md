@@ -7,7 +7,7 @@ header-style: text
 catalog: true
 tags:
     - GitLab
-
+    - Linux
 ---
 GitLab 的备份工作主要包含配置文件备份和应用备份。
 
