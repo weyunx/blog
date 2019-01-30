@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      GitLab 离线安装简易指引
-subtitle:   
+title:      GitLab 简易指引（一）
+subtitle:   离线一键安装
 author:     WeYunx
 header-style: text
 catalog: true
@@ -51,6 +51,8 @@ external_url "http://gitlab.example.com"
 ## GitLab 使用
 
 在浏览器的地址栏中输入 IP 即可登录 GitLab 的界面，用户是`root`，首次登录需要修改密码。
+
+
 
 
 

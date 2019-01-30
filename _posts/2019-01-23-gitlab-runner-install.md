@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      GitLab Runner 离线安装简易指引
-subtitle:   
+title:      GitLab 简易指引（三）
+subtitle:   GitLab Runner 安装与配置
 author:     WeYunx
 header-style: text
 catalog: true
@@ -104,6 +104,11 @@ Runner 默认只会在配置了和自身 tags 一致的项目上运行，是为�
 具体详细可参考[这里](https://docs.gitlab.com/runner/executors/#selecting-the-executor)
 
 ## GitLab 中配置 Runner
+
+在 GitLab 项目中新增`.gitlab-ci.yml` ，可以选择预先设置好的模版。
+
+
+
 
 *未完待续...*
 
