@@ -29,7 +29,7 @@ sudo wget -O /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.ama
 
 ```
 
-如果是离线安装的话，可以手工联网下载，然后放到内网中，放到`/usr/local/bin`目录下，并命名为`gitlab-runner`
+如果是离线安装的话，可以手工联网下载，然后放到内网中，放到 `/usr/local/bin` 目录下，并命名为 `gitlab-runner`。
 
 ```bash
 # 赋予可执行权限
@@ -48,7 +48,7 @@ sudo gitlab-runner start
 
 ## 注册 Runner
 
-首先需要准备URL和Token，可以在 GitLab 项目的 `settings->CI/CD->Runners settings` 中找到
+首先需要准备URL和Token，可以在 GitLab 项目的  `settings->CI/CD->Runners settings`  中找到
 
 
 ```bash
@@ -106,7 +106,7 @@ Runner 默认只会在配置了和自身 tags 一致的项目上运行，是为�
 
 ## GitLab 中配置 Runner
 
-在 GitLab 项目中新增`.gitlab-ci.yml` ，可以选择预先设置好的模版。
+在 GitLab 项目中新增 `.gitlab-ci.yml` ，可以选择预先设置好的模版。
 
 
 

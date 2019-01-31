@@ -13,14 +13,14 @@ GitLab 的备份工作主要包含配置文件备份和应用备份。
 
 ## 配置文件备份
 
-配置文件备份需要备份`/etc/gitlab`目录。
+配置文件备份需要备份 `/etc/gitlab` 目录。
 
 ```bash
 # 压缩文件夹
 sudo sh -c 'umask 0077; tar -cf $(date "+etc-gitlab-%s.tar") -C / etc/gitlab'
 ```
 
-在`crontab`中创建定时任务
+在 `crontab` 中创建定时任务
 
 ```bash
 sudo crontab -e -u root
@@ -72,9 +72,9 @@ Deleting tmp directories...[DONE]
 Deleting old backups... [SKIPPING]
 ```
 
-执行后，备份的`tar`包放置在默认的备份目录`/var/opt/gitlab/backups` 下。
+执行后，备份的 `tar` 包放置在默认的备份目录 `/var/opt/gitlab/backups`  下。
 
-同样，我们可以编辑`/etc/gitlab/gitlab.rb`来修改默认的备份目录。
+同样，我们可以编辑 `/etc/gitlab/gitlab.rb` 来修改默认的备份目录。
 
 ```bash
 # 默认的备份路径
@@ -83,7 +83,7 @@ gitlab_rails['backup_path'] = '/mnt/backups'
 
 同样这里我们强烈建议双机备份，官网提供了将备份上传到云以及上传到 mount 共享文件夹下，这里介绍一下上传到共享文件夹下的配置。 
 
-比如我在本地 windows 环境下创建了一个共享文件夹`gitlab_backups` ，然后将文件夹挂载到服务器上：
+比如我在本地 windows 环境下创建了一个共享文件夹 `gitlab_backups` ，然后将文件夹挂载到服务器上：
 
 ```bash
 # 在根目录下创建文件夹
@@ -93,7 +93,7 @@ mkdir gitlab_backups
 mount -t cifs -o uid=996,gid=993,username=user,password=pass //22.189.30.101/gitlab_backups /gitlab_backups
 ```
 
-其中`uid`和`gid`是服务器上`git`用户的`uid`和`gid`，如果不加上很可能会报权限异常。`user`和`pass`就是你本地的用户名密码，后面的 ip 和目录就是本地的共享目录。
+其中 `uid` 和 `gid` 是服务器上 `git` 用户的 `uid` 和 `gid`，如果不加上很可能会报权限异常。 `user` 和 `pass` 就是你本地的用户名密码，后面的 ip 和目录就是本地的共享目录。
 
 挂载成功后修改配置：
 
@@ -108,7 +108,7 @@ mount -t cifs -o uid=996,gid=993,username=user,password=pass //22.189.30.101/git
  gitlab_rails['backup_upload_remote_directory'] = '.'
 ```
 
-修改完成后执行`sudo gitlab-ctl reconfigure`使配置生效，此时再执行备份命令则会自动将备份文件复制到挂载的共享目录里。
+修改完成后执行 `sudo gitlab-ctl reconfigure` 使配置生效，此时再执行备份命令则会自动将备份文件复制到挂载的共享目录里。
 
 同样，我们可以加到定时任务中：
 
@@ -121,7 +121,7 @@ mount -t cifs -o uid=996,gid=993,username=user,password=pass //22.189.30.101/git
 
 ## GitLab 恢复
 
-配置文件的恢复很简单，直接将备份文件替换，然后执行`sudo gitlab-ctl reconfigure`即可。
+配置文件的恢复很简单，直接将备份文件替换，然后执行 `sudo gitlab-ctl reconfigure` 即可。
 
 下面说一下应用备份的恢复:
 

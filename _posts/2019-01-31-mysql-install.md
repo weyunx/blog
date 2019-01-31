@@ -12,7 +12,7 @@ tags:
 ---
 
 
-在 Centos7 系统下使用`yum`命令安装 MySql ，首先先在官网[这里](https://dev.mysql.com/downloads/repo/yum/)查看资源包。
+在 Centos7 系统下使用 `yum` 命令安装 MySql ，首先先在官网[这里](https://dev.mysql.com/downloads/repo/yum/)查看资源包。
 
 ```bash
 # 根据实际情况替换 mysql80-community-release-el7-2.noarch.rpm 为最新版本
@@ -41,7 +41,7 @@ cat /var/log/mysqld.log | grep password
 
 > 2019-01-30T12:53:55.670725Z 5 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: **22g!lpwRac%t**
 
-记录密码`22g!lpwRac%t`进行登录：
+记录密码 `22g!lpwRac%t` 进行登录：
 
 ```bash
 # 登录 MySql，并输入密码

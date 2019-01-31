@@ -35,7 +35,7 @@ yum install policycoreutils-python
 
 ## 配置
 
-GitLab 的相关参数配置都存在 `/etc/gitlab/gitlab.rb`文件里。GitLab需要你设置好哪个url才是用户可以访问到GitLab，需要编辑下面这个文件
+GitLab 的相关参数配置都存在 `/etc/gitlab/gitlab.rb` 文件里。GitLab需要你设置好哪个url才是用户可以访问到GitLab，需要编辑下面这个文件
 
 `/etc/gitlab/gitlab.rb`：
 
@@ -44,13 +44,13 @@ GitLab 的相关参数配置都存在 `/etc/gitlab/gitlab.rb`文件里。GitLab�
 external_url "http://gitlab.example.com"
 ```
 
-运行 `sudo gitlab-ctl reconfigure` 使修改生效。
+运行  `sudo gitlab-ctl reconfigure`  使修改生效。
 
 其它的配置可参考[这里](https://docs.gitlab.com.cn/omnibus/settings/README.html)
 
 ## GitLab 使用
 
-在浏览器的地址栏中输入 IP 即可登录 GitLab 的界面，用户是`root`，首次登录需要修改密码。
+在浏览器的地址栏中输入 IP 即可登录 GitLab 的界面，用户是 `root`，首次登录需要修改密码。
 
 
 
