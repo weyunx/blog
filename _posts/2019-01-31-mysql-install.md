@@ -48,7 +48,7 @@ cat /var/log/mysqld.log | grep password
 mysql -u root -p
 
 # 修改密码为123
-mysql> set password for root@localhost = password(‘123’);
+mysql> set password for root@localhost = ‘123’;
 ```
 
 
