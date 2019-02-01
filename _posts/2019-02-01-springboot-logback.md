@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring Boot 之 logback 配置
+title:      Spring Boot 之 LogBack 配置
 subtitle:   
 author:     WeYunx
 header-style: text
