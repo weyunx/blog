@@ -126,3 +126,12 @@ LogBack 同样支持多环境配置，如  `dev` 、 `test` 、 `prod`
 
 
 *未完待续...*
+
+
+
+## 参考
+
+- https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html#howto-configure-logback-for-logging
+- https://dzone.com/articles/enterprise-spring-best
+- https://dzone.com/articles/configuring-logback-with-spring-boot
+- http://tengj.top/2017/04/05/springboot7/
