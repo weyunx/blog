@@ -42,7 +42,7 @@ sudo crontab -e -u root
 GitLab 的备份命令如下：
 
 ```bash
-# 本文的操作步骤仅适用于 Omnibus 一键安装方式安装的 GitLab，下同。
+# 本文的操作步骤仅适用于 Omnibus 一键安装方式安装的 GitLab
 sudo gitlab-rake gitlab:backup:create
 
 # 样例结果
@@ -104,7 +104,8 @@ mount -t cifs -o uid=996,gid=993,username=user,password=pass //22.189.30.101/git
    :local_root => '/gitlab_backups'
  }
 
- # 配置备份文件放至在挂载文件夹里的子目录名称，如果备份文件直接放至在挂载目录里，使用 ‘.’ 
+ # 配置备份文件放至在挂载文件夹里的子目录名称
+ # 如果备份文件直接放至在挂载目录里，使用 ‘.’ 
  gitlab_rails['backup_upload_remote_directory'] = '.'
 ```
 
