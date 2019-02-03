@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring Boot 单元测试二三事
+title:      「译」Spring Boot 单元测试二三事
 subtitle:   All You Need To Know About Unit Testing with Spring Boot
 author:     WeYunx
 header-style: text
