@@ -5,6 +5,7 @@ subtitle:
 author:     WeYunx
 header-style: text
 catalog: true
+signature: true
 tags:
     - GitLab
     - Linux

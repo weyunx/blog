@@ -5,7 +5,7 @@ subtitle:   All You Need To Know About Unit Testing with Spring Boot
 author:     WeYunx
 header-style: text
 catalog: true
-signature: true
+signature: false
 tags:
     - Java
     - Spring boot
