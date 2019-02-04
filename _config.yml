@@ -80,7 +80,7 @@ ga_domain: weyunx.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "看世界～"
+sidebar-about-description: "「人活一世，有的成了面子，有的成了里子」"
 sidebar-avatar: /img/about_weyunx.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -105,7 +105,7 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+        title: "微云的笔记",
+        href: "https://weyunx.com/notes"
     }
 ]
