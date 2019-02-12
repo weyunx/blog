@@ -9,7 +9,7 @@ signature: true
 tags:
     - Java
     - Spring
-    - Spring boot
+    - Spring Boot
     - Logback
 
 ---

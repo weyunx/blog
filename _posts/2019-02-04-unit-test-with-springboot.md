@@ -8,7 +8,7 @@ catalog: true
 signature: false
 tags:
     - Java
-    - Spring boot
+    - Spring Boot
     - Test
 
 ---
