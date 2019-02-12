@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Spring Security 单点登录
+title:      Spring Security 单点登录例子
 subtitle:   
 author:     WeYunx
 header-style: text
