@@ -52,11 +52,16 @@ logging:
 <property name="log.path" value="/var/logs/application" />
 ```
 
-同时可以引入 Spring 的环境变量：
+同时可以引入 Spring 的环境变量，如：
 
 ```xml
 <property resource="application.yml" />
 <property resource="application.properties" />
+```
+不过推荐使用 `<springProperty>`，相比 `<property>` 提供了 `scope` 和 `defaultValue`：
+```xml
+<springProperty scope="context" name="fluentHost" source="myapp.fluentd.host"
+		defaultValue="localhost"/>
 ```
 
 所有的变量都可以通过 `${}` 来调用。
