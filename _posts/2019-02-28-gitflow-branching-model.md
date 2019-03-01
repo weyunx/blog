@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      「译」Spring Boot 单元测试二三事
+title:      「译」Gitflow
 subtitle:   Automating Your Java Project Workflow with a Modified Gitflow Branching Model
 author:     WeYunx
 header-style: text
