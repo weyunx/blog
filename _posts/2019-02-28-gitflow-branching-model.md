@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      「译」Gitflow 实践简介
+title:      「译」浅谈 Gitflow
 subtitle:   Automating Your Java Project Workflow with a Modified Gitflow Branching Model
 author:     WeYunx
 header-style: text
