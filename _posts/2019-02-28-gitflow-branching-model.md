@@ -142,35 +142,35 @@ release-build:
 ```yml
 master-branch-build:
   stage:
-	build
+    build
   script:
-	# Remove the -SNAPSHOT from the POM version
-	- mvn versions:set -DremoveSnapshot
-	# use the Maven help plugin to determine the version. Note the grep -v at the end, to prune out unwanted log lines.
-	- export FINAL_VERSION=$(mvn --non-recursive help:evaluate -Dexpression=project.version | grep -v '\[.*')
-	# Stage and commit the binaries (again using [ci skip] in the comment to avoid cycles)
-	- git add .
-	- git commit -m "Create release version [ci skip]"
-	# Tag the release
-	- git tag -a ${FINAL_VERSION} -m "Create release version"
-	- git push 
-	- mvn sonar:sonar deploy
+    # Remove the -SNAPSHOT from the POM version
+    - mvn versions:set -DremoveSnapshot
+    # use the Maven help plugin to determine the version. Note the grep -v at the end, to prune out unwanted log lines.
+    - export FINAL_VERSION=$(mvn --non-recursive help:evaluate -Dexpression=project.version | grep -v '\[.*')
+    # Stage and commit the binaries (again using [ci skip] in the comment to avoid cycles)
+    - git add .
+    - git commit -m "Create release version [ci skip]"
+    # Tag the release
+    - git tag -a ${FINAL_VERSION} -m "Create release version"
+    - git push 
+    - mvn sonar:sonar deploy
   artifacts:
-	paths:
-	# list our binaries here for Ansible deployment in the master-branch-deploy stage
-  	- target/my-binaries-*.jar
+    paths:
+    # list our binaries here for Ansible deployment in the master-branch-deploy stage
+    - target/my-binaries-*.jar
   only:
-	- master
+    - master
  
 master-branch-deploy:
   stage:
-	deploy
+    deploy
   dependencies:
-	- master-branch-build
+    - master-branch-build
   script:
    # "We would deploy artifacts (target/my-binaries-*.jar) here, using ansible
   only:
-	- master
+    - master
 ```
 
 ## Hotfixes
