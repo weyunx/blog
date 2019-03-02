@@ -122,7 +122,7 @@ release-build:
 主要特别注意的是提交的时候需要加上 ` [ciskip]` 防止新的提交再次触发 GitLab CI，从而进入死循环。
 
 
-### Bugs
+## Bugs
 
 在测试中，难免发现 bug，我们可以直接在 *release* 分支上修改，修改完后再 *merge* 到 *develop* 分支上（*develop* 分支包含的是已发布或者即将发布的代码）。
 
