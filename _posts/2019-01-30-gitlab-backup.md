@@ -34,7 +34,7 @@ sudo crontab -e -u root
 0 1 * * * umask 0077; tar cfz /secret/gitlab/backups/$(date "+etc-gitlab-\%s.tgz") -C / etc/gitlab
 ```
 
-也可以将语句写成脚本，通过脚本执行，比如备份的共享目录里。
+也可以将语句写成脚本，通过脚本执行，比如将备份的文件再拷贝到共享目录里。
 
 **强烈建议配置文件备份目录和应用备份目录分开！**
 
@@ -119,7 +119,16 @@ mount -t cifs -o uid=996,gid=993,username=user,password=pass //22.189.30.101/git
 0 2 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create
 ```
 
+### 备份文件清理
 
+因为 GitLab 备份的文件较大，会占用过多的存储，所以我们需要定时的自动清理：
+
+```shell
+# 清理3天前的备份文件
+find "/var/opt/gitlab/backups/" -name "*.tar" -ctime +3 -type f -exec rm -rf {} \;
+```
+
+同样将此命令定时执行或者加入到之前的备份脚本里即可。
 
 ## GitLab 恢复
 
