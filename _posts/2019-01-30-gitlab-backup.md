@@ -121,14 +121,14 @@ mount -t cifs -o uid=996,gid=993,username=user,password=pass //22.189.30.101/git
 
 ### 备份文件清理
 
-因为 GitLab 备份的文件较大，会占用过多的存储，所以我们需要定时的自动清理：
+因为 GitLab 备份的文件较大，会占用过多的存储，我们可以定时的进行清理，编辑 `gitlab.rb`，找到：
 
 ```shell
-# 清理3天前的备份文件
-find "/var/opt/gitlab/backups/" -name "*.tar" -ctime +3 -type f -exec rm -rf {} \;
+###! The duration in seconds to keep backups before they are allowed to be deleted
+gitlab_rails['backup_keep_time'] = 604800
 ```
 
-同样将此命令定时执行或者加入到之前的备份脚本里即可。
+默认为保留7天，修改后执行 `sudo gitlab-ctl reconfigure` 即可。
 
 ## GitLab 恢复
 
