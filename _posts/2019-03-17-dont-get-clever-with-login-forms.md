@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      登录页面——请不要这么设计
+title:      「译」登录页面——请不要这么设计
 subtitle:   don’t get clever with login forms
 author:     WeYunx
 header-style: text
