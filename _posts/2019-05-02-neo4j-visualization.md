@@ -15,7 +15,7 @@ tags:
 
 一般图的可视化组件，如 ECharts，Cytoscape.js 等，接收的图数据格式是按照节点和关系来分类的，类似：
 
-```json
+```javascript
     /*
     nodes:id,label,properties
     edges:id,source,target,title
